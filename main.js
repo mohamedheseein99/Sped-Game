@@ -61,8 +61,6 @@ let input = document.querySelector(".input");
 let upWord = document.querySelector(".up-word");
 let time = document.querySelector(".time span");
 let scoreGot = document.querySelector(".score .got");
-let finish = document.querySelector(".finish");
-let list = document.querySelector(".list");
 
 // إظهر أخر نتيجة لعب في القايمة
 if (window.sessionStorage.getItem("score")) {
@@ -144,7 +142,7 @@ function play() {
         document.querySelector(".fill").play();
         window.sessionStorage.setItem("score", scoreGot.innerHTML);
         document.querySelector(".finish span").innerHTML = scoreGot.innerHTML;
-        finish.style.display = "block";
+        document.querySelector(".finish").style.display = "block";
       }
       // تشغيل فنكشن حفظ النتيجة الاخيرة
       result();
@@ -156,3 +154,4 @@ function result() {
   let span = document.querySelector(".list span");
   span.innerHTML = window.sessionStorage.getItem("score");
 }
+
