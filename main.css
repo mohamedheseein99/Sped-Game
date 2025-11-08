@@ -48,6 +48,7 @@ body {
         .box {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 50px;
             font-size: 35px;
 
@@ -169,3 +170,4 @@ body {
     }
 
 }
+
