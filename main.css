@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+}
+
+.game {
+
+    .name {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: darkcyan;
+        padding: 15px;
+    }
+
+    .container {
+        width: 80%;
+        padding: 15px;
+        margin: 0px auto;
+        text-align: center;
+        border-radius: 5px;
+
+        .style {
+            border-radius: inherit;
+            margin: 10px;
+            padding: inherit;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .info {
+            background-color: #eee;
+            font-size: 20px;
+
+            .second,
+            .lvl {
+                color: darkblue;
+            }
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            font-size: 35px;
+
+            span {
+                font-size: 20px;
+                cursor: pointer;
+                padding: 10px 25px 15px;
+                border-radius: 10px;
+                color: white;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .lv1 {
+                background-color: green;
+            }
+
+            .lv2 {
+                background-color: orange;
+            }
+
+            .lv3 {
+                background-color: red;
+            }
+        }
+
+        .start {
+            color: #FFF;
+            background-color: green;
+            cursor: pointer;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 30px;
+            display: none;
+        }
+
+        .the-word {
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 25px;
+        }
+
+        .input {
+            outline: none;
+            border: 2px solid blue;
+            background-color: #EEE;
+            width: 98%;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .up-word {
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            div {
+                font-size: 18px;
+                border-radius: inherit;
+                background-color: cadetblue;
+                color: white;
+                padding: 10px;
+            }
+        }
+
+        .control {
+            background-color: #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .finish,
+        .win {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 60px;
+            width: 700px;
+            text-align: center;
+            font-size: 40px;
+            background-color: #795548;
+            color: white;
+            display: none;
+        }
+
+        .win {
+            width: 800px;
+            background-color: #009688;
+            line-height: 1.5;
+            padding: 50px;
+        }
+
+        .agen {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: fit-content;
+            margin: 30px auto 0;
+            color: white;
+            background-color: #8bc34a;
+            padding: 20px 50px;
+            border-radius: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+                background-color: green;
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            background-color: #ddd;
+        }
+    }
+}
