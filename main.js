@@ -128,7 +128,7 @@ function play() {
       clearInterval(start);
       // هنا هنتحقق من الكلمة هل صح او خطأ
       if (input.value == theWord.innerHTML) {
-        input.value = "";
+        input.value = " ";
         scoreGot.innerHTML++;
         document.querySelector(".secses").play();
         // عمل توليد لكلمة أخري لاستمرار اللعبة لو لسه في كلمات فى القايمة
@@ -154,4 +154,5 @@ function result() {
   let span = document.querySelector(".list span");
   span.innerHTML = window.sessionStorage.getItem("score");
 }
+
 
